@@ -17,7 +17,7 @@ Règles de Gestion
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Exercice13</title>
+    <title>Exercice14</title>
 </head>
 <body>
     <section class="container">
@@ -77,8 +77,10 @@ Règles de Gestion
                     }
                 ?>
             </section>
-            <input type="submit" value="suivant" name="suivant" class="suivant">
-            <input type="submit" value="retour" name="retour" class="retour">
+            <section class="buttons2">
+               <a href="../Exercice13/index.html.php"><input type="submit" value="Exercice précédent" name="retour" class="retour"></a> 
+               <a href="../Exercice15/index.html.php"><input type="submit" value="Exercice suivant" name="suivant" class="suivant"></a> 
+            </section>
         </form>
     </section>
 <?php session_destroy(); ?>

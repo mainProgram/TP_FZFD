@@ -14,7 +14,7 @@ liste ul dont les li affichent toutes les valeurs entre 1 et N. N est positif. -
 <body>
     <div class="container">
         <form action="controller.php" method="post">
-            <label for="N"><h2>Saisir un nombre N pour générer une liste ul dont les li affichent toutes les valeurs entre 1 et N. N est positif et inférieur à 750.</h2></label>
+            <label for="N"><h2>Saisir un nombre N pour générer une liste ul dont les li affichent toutes les valeurs entre 1 et N. N est positif et inférieur à 650.</h2></label>
             <?php
                 if(isset($_GET["nn"]) && $_GET["nn"]==0)
                     echo '<span class="error">N est invalide</span>';
@@ -30,8 +30,10 @@ liste ul dont les li affichent toutes les valeurs entre 1 et N. N est positif. -
                 echo "</ul>";
                 }
             ?>
-            <input type="submit" value="suivant" name="suivant" class="suivant">
-            <input type="submit" value="retour" name="retour" class="retour">
+            <section class="buttons">
+                <input type="submit" value="Exercice précédent" name="retour" class="retour">
+                <input type="submit" value="Exercice suivant" name="suivant" class="suivant">
+            </section>
         </form>  
     </div>
 <?php session_destroy(); ?>

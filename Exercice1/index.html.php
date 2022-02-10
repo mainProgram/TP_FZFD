@@ -25,7 +25,10 @@
                         echo "<h1 class = 'error'>Le coté entré n'est pas valide.</h1>";
                 }
             ?>
-            <input type="submit" value="suivant" name="suivant" class="suivant">
+            <section class="buttons">
+                <input type="submit" value="Menu d'accueil" name="retour" class="retour">
+                <input type="submit" value="Exercice suivant" name="suivant" class="suivant">
+            </section>
         </form>
     </div>
 </body>

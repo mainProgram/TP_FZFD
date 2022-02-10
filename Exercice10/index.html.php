@@ -14,7 +14,7 @@ N champs inputs . N est positif. -->
 <body>
     <div class="container">
         <form action="controller.php" method="post">
-            <label for="N">Le nombre N est saisi à l’aide d’un formulaire et on génère les N champs inputs. N est positif et inférieur à 11. </label>
+            <label for="N">Le nombre N est saisi à l’aide d’un formulaire et on génère les N champs inputs. N est positif. </label>
             <?php
                 if(isset($_GET["nn"]) && $_GET["nn"]==0)
                     echo '<span class="error">N est invalide !</span>';
@@ -29,8 +29,10 @@ N champs inputs . N est positif. -->
                     }
                 }
             ?>
-            <input type="submit" value="suivant" name="suivant" class="suivant">
-            <input type="submit" value="retour" name="retour" class="retour">
+             <section class="buttons">
+                <input type="submit" value="Exercice précédent" name="retour" class="retour">
+                <input type="submit" value="Exercice suivant" name="suivant" class="suivant">
+            </section>
         </form>
     </div>
 <?php session_destroy(); ?>

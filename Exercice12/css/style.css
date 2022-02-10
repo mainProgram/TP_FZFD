@@ -58,10 +58,19 @@ td,th{
 .buttons{
     display: flex;
     justify-content: space-around;
-    margin-top: 5%;
+    margin-top: 3%;
 }
 form{
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+.buttons2{
+    margin-top: 3%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between ;
+}
+.buttons2 input[type="submit"]{
+    width: 35%;
 }

@@ -61,10 +61,12 @@ Règles de Gestion
                         echo '<input type="submit" value="Soumettre" name="soumettre">';
                         echo "</form>";
                     }
-                ?>
+                    ?>
             </section>
-            <input type="submit" value="suivant" name="suivant" class="suivant">
-            <input type="submit" value="retour" name="retour" class="retour">
+             <section class="buttons2">
+               <a href="../Exercice12/index.html.php"><input type="submit" value="Exercice précédent" name="retour" class="retour"></a> 
+               <a href="../Exercice14/index.html.php"><input type="submit" value="Exercice suivant" name="suivant" class="suivant"></a> 
+            </section>
         </form>
     </section>
 <?php session_destroy(); ?>

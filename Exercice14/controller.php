@@ -29,13 +29,11 @@
             $_SESSION["nbNumerosIncorrect"] = "Le nombre de numéros de téléphone saisi est incorrect !";
             header("location:index.html.php?nn=3");
         }
-    }
+    }else if(isset($suivant))
+        header("Location:../Exercice15/index.html.php");
+    else if(isset($retour))
+        header("Location:../Exercice13/index.html.php");
     else
         header("location:index.html.php?nn=0");   
-        
-    if(isset($suivant))
-        header("Location:../Exercice15/index.html.php");
-    if(isset($retour))
-        header("Location:../Exercice13/index.html.php");
 ?>
 

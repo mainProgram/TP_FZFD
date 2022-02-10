@@ -80,7 +80,10 @@ champs radio est égal au nombre de couleurs.
                 }
             }
             ?>
-            <input type="submit" value="retour" name="retour" class="retour">
+            <section class="buttons">
+                <input type="submit" value="Exercice précédent" name="retour" class="retour">
+                <input type="submit" value="Menu d'accueil" name="suivant" class="suivant">
+            </section>        
         </form>
     </section>
 <?php session_destroy(); ?>

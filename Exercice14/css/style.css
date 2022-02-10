@@ -18,8 +18,6 @@ label{
 }
 
 .container{
-    display: flex;
-    justify-content: center;
     background-color:beige;
     border-radius: 1rem 1rem;
     padding: 2%;
@@ -78,4 +76,12 @@ textarea{
     display: flex;
     flex-direction: column; 
     align-items: center ;
+}
+.buttons2{
+    width: 100%;
+    display: flex;
+    justify-content: space-between ;
+}
+.buttons2 input{
+    width: 100%;
 }

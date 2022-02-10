@@ -20,9 +20,7 @@ body{
     border-radius: 1rem 1rem;
     padding: 2%;
     width: 50%;
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
+    height: 90vh;
 }
 h1{
     margin-bottom: 5%;
@@ -44,6 +42,16 @@ input[type="submit"]:hover {
     color: beige;
     background-color: blueviolet;
 }
+form{
+    display: flex;
+    flex-direction: column;
+}
 .suivant{
-    align-self: flex-end;
+    justify-self: flex-end;
+    align-self: center;
+    width: 20%;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between ;
 }

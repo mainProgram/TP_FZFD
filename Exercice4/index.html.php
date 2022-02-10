@@ -22,8 +22,10 @@
                 swap($_GET["nombre1"],$_GET["nombre2"]);
             }
         ?>   
-        <input type="submit" value="suivant" name="suivant" class="suivant">
-        <input type="submit" value="retour" name="retour" class="retour">
+        <section class="buttons">
+            <input type="submit" value="Exercice précédent" name="retour" class="retour">
+            <input type="submit" value="Exercice suivant" name="suivant" class="suivant">
+        </section>
     </form>
     </div>
 </body>

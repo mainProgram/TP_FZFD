@@ -30,6 +30,7 @@ label{
 }
 
 form{
+    width: 100%;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -54,4 +55,9 @@ input[type="submit"]:hover {
 
 .error{
     color: red;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between ;
 }

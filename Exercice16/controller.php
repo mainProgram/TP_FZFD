@@ -14,10 +14,11 @@
         $_SESSION["position"] = $position;
         header("location:index.html.php?nn=2");
     }
+    elseif(isset($retour))
+        header("Location:../Exercice15/index.html.php");
+    elseif(isset($suivant))
+        header("Location:../accueil.html.php");
     else
         header("location:index.html.php?nn=0");   
-    
-    if(isset($retour))
-    header("Location:../Exercice15/index.html.php");
 ?>
 
