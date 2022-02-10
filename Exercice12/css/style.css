@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('../img/img.jpg');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.container{
+    background-color:beige;
+    border-radius: 1rem 1rem;
+    padding: 2%;
+    width: 60%;
+    height: 90vh;
+}
+
+input{
+    padding: 1rem 1rem;
+    width: 20%;
+    border: 3px solid blueviolet;
+    border-radius: 1rem 1rem;
+    font-size: 2rem;
+}
+
+input[type="submit"]{
+    color: blueviolet;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover, td:hover {
+    color: beige;
+    background-color: blueviolet;
+}
+
+table, tr, td {
+   border: 3px solid blueviolet;
+}
+
+table{
+    border-collapse:collapse; 
+    border-spacing:0;
+}
+
+td,th{
+    width: 100px;
+    padding: 5%;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
