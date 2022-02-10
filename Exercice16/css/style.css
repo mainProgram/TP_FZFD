@@ -60,4 +60,7 @@ input[type="submit"]:hover {
 table, td, tr{
     border: 1px solid;
 }
-
+.buttons{
+    display: flex;
+    justify-content: space-between ;
+}

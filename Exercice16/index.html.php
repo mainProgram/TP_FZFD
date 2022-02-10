@@ -60,25 +60,50 @@ champs radio est égal au nombre de couleurs.
 
             <?php
                 if(isset($_GET["nn"]) && ($_GET["nn"]==1 || $_GET["nn"]==2)){
-                echo 
-                    '<h1>La couleur de la position ADDP, au-dessus de la diagonale principale</h1>
-                     <h1>La couleur de la position EDDP, en dessous de la diagonale principale</h1>
-                     <h1>La couleur de la position SDP,     sur la diagonale principale</h1>
-                     <h1>La couleur de la position ADDS, au-dessus de la diagonale secondaire</h1>
-                     <h1>La couleur de la position EDDS, en dessous de la diagonale secondaire</h1>
-                     <h1>La couleur de la position SDS, sur la diagonale secondaire</h1>
-                    <section class="radios">
-                        <input type="radio" checked name="position" id="position" value="haut">
-                        <label for="position">ADDP</label>
-                        <input type="radio" name="position" id="position" value="bas">
-                        <label for="position">Bas</label>
-                    </section>
-                    <input type="submit" value="Dessiner" name="dessiner">';
-                if(isset($_SESSION['N']) && isset($_SESSION['position']) && isset($_SESSION['color'])){
-                    echo "<h1>La matrice carrée d'ordre ".$_SESSION['N']."</h1>";
-                    dessiner($_SESSION['N'],$_SESSION['position'],$_SESSION['color']);
+                    $colors=colors();
+                    echo '<h1>La couleur de la position ADDP, au-dessus de la diagonale principale</h1>';
+                    echo '<select name="color1">';
+                    foreach($colors as $i=>$val)
+                        echo '<option value="'.$val.'">'.$i.'</option>';
+                    echo '</select>';
+                    
+                    echo '<h1>La couleur de la position EDDP, en dessous de la diagonale principale</h1>';
+                    echo '<select name="color2">';
+                    foreach($colors as $i=>$val)
+                        echo '<option value="'.$val.'">'.$i.'</option>';
+                    echo '</select>';
+
+
+                    echo '<h1>La couleur de la position SDP, sur la diagonale principale</h1>';
+                    echo '<select name="color3">';
+                    foreach($colors as $i=>$val)
+                        echo '<option value="'.$val.'">'.$i.'</option>';
+                    echo '</select>';
+
+                    echo '<h1>La couleur de la position ADDS, au-dessus de la diagonale secondaire</h1>';
+                    echo '<select name="color4">';
+                    foreach($colors as $i=>$val)
+                        echo '<option value="'.$val.'">'.$i.'</option>';
+                    echo '</select>';
+
+                    echo '<h1>La couleur de la position EDDS, en dessous de la diagonale secondaire</h1>';
+                    echo '<select name="color5">';
+                    foreach($colors as $i=>$val)
+                        echo '<option value="'.$val.'">'.$i.'</option>';
+                    echo '</select>';
+
+                    echo '<h1>La couleur de la position SDS, sur la diagonale secondaire</h1>';
+                    echo '<select name="color6">';
+                    foreach($colors as $i=>$val)
+                        echo '<option value="'.$val.'">'.$i.'</option>';
+                    echo '</select>';
+
+                    echo '<input type="submit" value="Dessiner" name="dessiner">';
+                    if(isset($_SESSION['N']) && isset($_SESSION['color1']) && isset($_SESSION['color2'])){
+                        echo "<h1>La matrice carrée d'ordre ".$_SESSION['N']."</h1>";
+                        dessiner($_SESSION['N'],$_SESSION['color1'],$_SESSION['color2'],$_SESSION['color3'],$_SESSION['color4'],$_SESSION['color5'],$_SESSION['color6']);
+                    }
                 }
-            }
             ?>
             <section class="buttons">
                 <input type="submit" value="Exercice précédent" name="retour" class="retour">
