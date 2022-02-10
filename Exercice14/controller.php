@@ -31,6 +31,11 @@
         }
     }
     else
-        header("location:index.html.php?nn=0");       
+        header("location:index.html.php?nn=0");   
+        
+    if(isset($suivant))
+        header("Location:../Exercice15/index.html.php");
+    if(isset($retour))
+        header("Location:../Exercice13/index.html.php");
 ?>
 

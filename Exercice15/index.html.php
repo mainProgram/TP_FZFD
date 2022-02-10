@@ -59,6 +59,8 @@ Règles de Gestion
                 }
             }
             ?>
+            <input type="submit" value="suivant" name="suivant" class="suivant">
+            <input type="submit" value="retour" name="retour" class="retour">
         </form>
     </section>
 <?php session_destroy(); ?>

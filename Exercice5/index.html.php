@@ -9,6 +9,7 @@
 </head>
 <body>
     <div class="container">
+    <form action="controller.php" method="Post">
         <h1><i>Générer deux points puis calculer et afficher la distance entre les deux points. Un point est caractérisé par son abscisse et son ordonnée.</i></h1>
         <?php
             include 'functions.php';
@@ -16,6 +17,9 @@
             $ordPointA = rand(1,100); $ordPointB = rand(1,100);
             mes_points($absPointA, $absPointB, $ordPointA, $ordPointB);
         ?>
+        <input type="submit" value="suivant" name="suivant" class="suivant">
+        <input type="submit" value="retour" name="retour" class="retour">
+    </form>
     </div>
 </body>
 </html>

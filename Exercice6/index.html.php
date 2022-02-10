@@ -35,6 +35,8 @@
             
             <label for=""></label>
             <input type="submit" value="Envoyer" name="envoi">
+            <input type="submit" value="suivant" name="suivant" class="suivant">
+            <input type="submit" value="retour" name="retour" class="retour">
         </form>
     </div>
 <?php session_destroy(); ?>

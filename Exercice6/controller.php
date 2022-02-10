@@ -20,4 +20,10 @@
         header("location:index.html.php?aa=".$aa."&bb=".$bb."&cc=".$cc);
     }
     // $a = (int) $a; var_dump($a);exit();
+    if(isset($suivant)){
+        header("Location:../Exercice7/index.html.php");
+    }
+    if(isset($retour)){
+        header("Location:../Exercice5/index.html.php");
+    }
 ?>

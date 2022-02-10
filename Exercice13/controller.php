@@ -30,5 +30,10 @@
     else{
         header("location:index.html.php?nn=0");
     }        
+
+    if(isset($suivant))
+        header("Location:../Exercice14/index.html.php");
+    if(isset($retour))
+        header("Location:../Exercice12/index.html.php");
 ?>
 

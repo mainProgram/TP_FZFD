@@ -15,6 +15,9 @@
         header("location:index.html.php?nn=2");
     }
     else
-        header("location:index.html.php?nn=0");       
+        header("location:index.html.php?nn=0");   
+    
+    if(isset($retour))
+    header("Location:../Exercice15/index.html.php");
 ?>
 

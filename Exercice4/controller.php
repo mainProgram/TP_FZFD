@@ -10,5 +10,8 @@
     if(isset($suivant)){
         header("Location:../Exercice5/index.html.php");
     }
+    if(isset($retour)){
+        header("Location:../Exercice1/index.html.php");
+    }
 
 ?>

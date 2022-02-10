@@ -15,6 +15,11 @@
         header("location:index.html.php?nn=2");
     }
     else
-        header("location:index.html.php?nn=0");       
+        header("location:index.html.php?nn=0"); 
+    
+    if(isset($suivant))
+        header("Location:../Exercice16/index.html.php");
+    if(isset($retour))
+        header("Location:../Exercice14/index.html.php");
 ?>
 

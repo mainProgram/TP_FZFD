@@ -6,5 +6,9 @@
     $nn = (isset($envoi) && isset($N) && is_numeric($N) && $N>0) ? 1 : 0;
     
     header("location:index.html.php?nn=".$nn);
+    if(isset($suivant))
+        header("Location:../Exercice10/index.html.php");
+    if(isset($retour))
+        header("Location:../Exercice8/index.html.php");
 ?>
     

@@ -30,7 +30,9 @@ liste ul dont les li affichent toutes les valeurs entre 1 et N. N est positif. -
                 echo "</ul>";
                 }
             ?>
-        </form>
+            <input type="submit" value="suivant" name="suivant" class="suivant">
+            <input type="submit" value="retour" name="retour" class="retour">
+        </form>  
     </div>
 <?php session_destroy(); ?>
 

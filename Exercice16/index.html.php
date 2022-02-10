@@ -74,13 +74,13 @@ champs radio est égal au nombre de couleurs.
                         <label for="position">Bas</label>
                     </section>
                     <input type="submit" value="Dessiner" name="dessiner">';
-                if(isset($_SESSION['N']) && isset($_SESSION['position'])){
+                if(isset($_SESSION['N']) && isset($_SESSION['position']) && isset($_SESSION['color'])){
                     echo "<h1>La matrice carrée d'ordre ".$_SESSION['N']."</h1>";
-                    dessiner($_SESSION['N'],$_SESSION['position']);
+                    dessiner($_SESSION['N'],$_SESSION['position'],$_SESSION['color']);
                 }
             }
             ?>
-            
+            <input type="submit" value="retour" name="retour" class="retour">
         </form>
     </section>
 <?php session_destroy(); ?>
