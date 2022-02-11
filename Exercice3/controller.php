@@ -12,6 +12,6 @@
         header("Location:../Exercice4/index.html.php");
     }
     if(isset($retour)){
-        header("Location:../Exercice1/index.html.php");
+        header("Location:../Exercice2/index.html.php");
     }
 ?>

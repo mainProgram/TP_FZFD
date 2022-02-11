@@ -4,7 +4,7 @@
     }
   
     function nb_jours($mois, $an){
-        if($mois == 4 | $mois == 6 | $mois == 9 | $mois == 11)  
+        if($mois == 4 || $mois == 6 || $mois == 9 || $mois == 11)  
             return 30;
         elseif ($mois != 2)
             return 31;

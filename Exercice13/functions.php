@@ -31,7 +31,7 @@ function divide($string){
     return $tab;
 }	
 
-print_r(divide("Renseigner le nombre de phrases. Les phrases ne doivent pas contenir des caractères spéciaux. Une phrase commence par lettre majuscule et se termine par un point. Chaque phrase contiendra au moins 25 caractères.  Renseigner le nombre de phrases. "));
+// print_r(divide("Renseigner le nombre de phrases. Les phrases ne doivent pas contenir des caractères spéciaux. Une phrase commence par lettre majuscule et se termine par un point. Chaque phrase contiendra au moins 25 caractères.  Renseigner le nombre de phrases. "));
 
 function is_string_a_sentence($string){
 	return (preg_match('#^[A-Z0-9]#', $string) && preg_match('#[!\?\.]$#', $string));
