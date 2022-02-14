@@ -79,6 +79,7 @@ Règles de Gestion
             </section>
             <section class="buttons2">
                <a href="../Exercice13/index.html.php"><input type="submit" value="Exercice précédent" name="retour" class="retour"></a> 
+               <a href="../accueil.html.php">Menu</a>
                <a href="../Exercice15/index.html.php"><input type="submit" value="Exercice suivant" name="suivant" class="suivant"></a> 
             </section>
         </form>

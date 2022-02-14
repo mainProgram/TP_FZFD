@@ -18,6 +18,7 @@
         ?>
         <section class="buttons">
             <a href="../Exercice4/index.html.php"><input type="submit" value="Exercice précédent" name="retour" class="retour"></a>
+            <a href="../accueil.html.php">Menu</a>
             <a href="../Exercice6/index.html.php"><input type="submit" value="Exercice suivant" name="retour" class="retour"></a>
         </section>
     </div>

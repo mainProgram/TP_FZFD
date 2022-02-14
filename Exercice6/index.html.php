@@ -37,6 +37,7 @@
             <input type="submit" value="Envoyer" name="envoi">
             <section class="buttons">
                 <input type="submit" value="Exercice précédent" name="retour" class="retour">
+                <a href="../accueil.html.php">Menu</a>
                 <input type="submit" value="Exercice suivant" name="suivant" class="suivant">
             </section>
         </form>
